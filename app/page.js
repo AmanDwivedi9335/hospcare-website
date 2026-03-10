@@ -1,16 +1,12 @@
 import Home from "@/components/HomeNew/Home";
 
 export const metadata = {
-        title: "LADWA Safety Equipment & Workplace Protection",
-        description:
-                "Discover LADWA's comprehensive catalogue of industrial safety products, EHS consulting, and turnkey protection services engineered to keep teams safe and compliant.",
-        alternates: { canonical: "/" },
+  title: "Hospcare | India's Smart Healthcare Access Platform",
+  description:
+    "Find trusted doctors, hospitals, and treatment guidance in one place with Hospcare.",
+  alternates: { canonical: "/" },
 };
 
 export default function HomePage() {
-        return (
-                <>
-                        <Home />
-                </>
-        );
+  return <Home />;
 }

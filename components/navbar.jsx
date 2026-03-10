@@ -56,7 +56,7 @@ export default function Navbar() {
 						{/* <span className="text-xl font-bold text-black">LADWA</span> */}
 						<Image
 							src={LadwaLogo.src}
-							alt="Ladwa Logo"
+							alt="Hospcare Logo"
 							width={150}
 							height={150}
 						/>
@@ -68,12 +68,6 @@ export default function Navbar() {
 					<Link href="/" className={`text-sm font-medium ${isActive("/")} cursor-pointer`}>
 						Home
 					</Link>
-                                        <Link
-                                                href="/projects"
-                                                className={`text-sm font-medium ${isActive("/projects")} cursor-pointer`}
-                                        >
-                                                Projects
-                                        </Link>
                                         {/* <div className="relative group">
 										<button className="text-sm font-medium text-gray-600 hover:text-teal-700">
 											Product Categories
@@ -118,7 +112,7 @@ export default function Navbar() {
 					>
 						Log in
 					</Link> */}
-                                        <Button  onClick={() => {navigate.push('/contact-us')}} className="cursor-pointer bg-gradient-to-b from-[#097362] to-[#0FA78E] rounded-full hover:bg-teal-800">Contact Us</Button>
+                                        <Button  onClick={() => {navigate.push('/contact-us')}} className="cursor-pointer bg-gradient-to-b from-[#097362] to-[#0FA78E] rounded-full hover:bg-teal-800">Book Appointment</Button>
                                 </div>
 
 				{/* Mobile Menu Button */}
@@ -142,12 +136,6 @@ export default function Navbar() {
 						<Link href="/" className={`text-sm font-medium ${isActive("/")}`}>
 							Home
 						</Link>
-                                               <Link
-                                                        href="/projects"
-                                                        className={`text-sm font-medium ${isActive("/projects")}`}
-                                                >
-                                                        Projects
-                                                </Link>
                                                 <details>
                                                         {/* <summary className="list-none text-sm font-medium text-gray-600 hover:text-teal-700">Product Categories</summary>/ */}
                                                         <div className="pl-4 flex flex-col space-y-2 mt-2">
@@ -186,7 +174,7 @@ export default function Navbar() {
 								Log in
 							</Link> */}
                                                         <Button onClick={() => {navigate.push('/contact-us')}} className="rounded-full bg-gradient-to-b from-[#097362] to-[#0FA78E] hover:bg-teal-800 w-full">
-                                                                Contact Us
+                                                                Book Appointment
                                                         </Button>
                                                 </div>
 					</nav>

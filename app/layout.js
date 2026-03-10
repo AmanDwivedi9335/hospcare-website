@@ -16,13 +16,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-        metadataBase: new URL("https://www.ladwa.com"),
+        metadataBase: new URL("https://www.hospcare.in"),
         title: {
-                default: "LADWA | Integrated Safety Equipment & Solutions",
-                template: "%s | LADWA Safety Solutions",
+                default: "Hospcare | Smart Healthcare Access Platform",
+                template: "%s | Hospcare",
         },
         description:
-                "LADWA delivers certified industrial safety equipment, turnkey EHS consulting, and technology-backed protection systems for organisations across India and beyond.",
+                "Hospcare helps patients find trusted doctors, hospitals, surgeries, and treatment support in one digital platform.",
         alternates: {
                 canonical: "/",
         },
