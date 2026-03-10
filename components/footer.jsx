@@ -91,7 +91,7 @@ export default function ModernFooter() {
           <div className="lg:col-span-5 space-y-4">
             <Image src={LadwaLogo} alt="Ladwa Logo" width={170} height={52} priority />
             <p className="text-gray-700 text-sm leading-relaxed">
-              LADWA is a globally trusted brand in the Environment, Health, and Safety (EHS) sector, delivering world-class products and solutions that protect people, infrastructure, and the environment.
+              Hospcare is a digital healthcare platform helping patients connect with trusted doctors, hospitals, and treatment support services in one place.
             </p>
 
             <div className="flex flex-wrap gap-3">
@@ -186,7 +186,7 @@ export default function ModernFooter() {
         <div className="mt-8 pt-6 border-t border-teal-300/70">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-gray-700 text-center md:text-left">
-              © {new Date().getFullYear()} LADWA — Made with 💗 by CapitalHUB
+              © {new Date().getFullYear()} Hospcare — Smart Healthcare Access Platform
             </p>
             <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2">
               <Link href="/terms-privacy" className="text-sm text-gray-700 hover:text-gray-900">Terms of Use</Link>
