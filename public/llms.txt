@@ -1,0 +1,3 @@
+# LADWA Large Language Model Access Policy
+User-agent: *
+Allow: /

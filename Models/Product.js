@@ -1,0 +1,81 @@
+import mongoose from 'mongoose';
+import { DEFAULT_PRODUCT_DESCRIPTION } from '@/lib/defaults';
+
+const specSchema = new mongoose.Schema({
+  key: String,
+  value: String,
+});
+
+const productSchema = new mongoose.Schema(
+  {
+    category: { type: mongoose.Schema.Types.ObjectId, ref: 'ProductCategory', required: true },
+    name: { type: String, required: true },
+    slug: { type: String, required: true, unique: true },
+    description: {
+      type: String,
+      default: DEFAULT_PRODUCT_DESCRIPTION,
+    },
+    longDescription: String,
+    image: String,
+    gallery: [String],
+    keyFeatures: [String],
+    additionalFeatures: [String],
+    weight: String,
+    dimension: String,
+    specifications: [specSchema],
+    // Additional product attributes
+    productType: String,
+    sellerSku: String,
+    externalProductId: String,
+    manufacturer: String,
+    modelName: String,
+    closureType: String,
+    soleMaterial: String,
+    heelType: String,
+    heelHeight: String,
+    outerMaterialType: String,
+    heelHeightUnitOfMeasure: String,
+    footwearSizeSystem: String,
+    shoeSizeAgeGroup: String,
+    shoeSizeGender: String,
+    shoeSizeClass: String,
+    shoeSizeWidth: String,
+    shoeSize: String,
+    style: String,
+    color: String,
+    size: String,
+    colourMap: String,
+    manufacturerContact: String,
+    materialTypes: [String],
+    sizeMap: String,
+    unitCountType: String,
+    unitCount: String,
+    itemLengthLongerEdge: String,
+    itemLengthUnit: String,
+    itemWidthShorterEdge: String,
+    itemWidthUnit: String,
+    itemWeight: String,
+    itemWeightUnit: String,
+    hoseLength: String,
+    hoseLengthUnitOfMeasure: String,
+    seatHeight: String,
+    seatHeightUnitOfMeasure: String,
+    shoeHeightMap: String,
+    packageHeightUnit: String,
+    packageLength: String,
+    packageWidth: String,
+    packageWeightUnit: String,
+    packageHeight: String,
+    packageWidthUnit: String,
+    packageLengthUnit: String,
+    packageWeight: String,
+    externalProductInformation: String,
+    materialFabricRegulations: [String],
+    maximumRetailPrice: String,
+    yourPriceInr: String,
+  },
+  { timestamps: true }
+);
+
+const Product = mongoose.models.Product || mongoose.model('Product', productSchema);
+export default Product;
