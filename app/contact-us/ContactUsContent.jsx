@@ -186,8 +186,8 @@ export default function ContactUsContent() {
                                                                                 <Mail className="h-5 w-5" />
                                                                                 <div>
                                                                                         <p className="font-medium">Email</p>
-                                                                                        <a href="mailto:info@ladwa.com" className="text-teal-100 text-sm">
-                                                                                                info@ladwa.com
+                                                                                        <a href="mailto:info@hospcare.com" className="text-teal-100 text-sm">
+                                                                                                info@hospcare.com
                                                                                         </a>
                                                                                 </div>
                                                                         </div>
@@ -196,7 +196,7 @@ export default function ContactUsContent() {
                                                                                 <div>
                                                                                         <p className="font-medium">Head Office</p>
                                                                                         <p className="text-teal-100 text-sm">
-                                                                                                LADWA House, Plot 12, Industrial Innovation Park, Gurugram, Haryana 122001
+                                                                                                Kanpur
                                                                                         </p>
                                                                                 </div>
                                                                         </div>

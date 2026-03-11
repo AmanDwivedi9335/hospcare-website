@@ -5,30 +5,28 @@ import Link from "next/link";
 import Image from "next/image";
 import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
 
-import LadwaLogo from "@/public/images/Ladwa_Logo.png";
-import AppStore from "@/public/images/footer/AppStore.png";
-import GooglePlay from "@/public/images/footer/GooglePlay.png";
+import LadwaLogo from "@/public/images/hospcare_logo.png";
 
 const companyLinks = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
-  { name: "Projects", href: "/projects" },
+  { name: "Projects", href: "/" },
   { name: "Contact Us", href: "/contact-us" },
 ];
 
 const resourcesLinks = [
   { name: "Blogs", href: "/blog" },
-  { name: "Certificates", href: "/certifications" },
-  { name: "Terms and Conditions", href: "/terms-privacy" },
-  { name: "Privacy Policy", href: "/terms-privacy" },
+  { name: "Certificates", href: "/" },
+  { name: "Terms and Conditions", href: "/" },
+  { name: "Privacy Policy", href: "/" },
 ];
 
 const socialLinks = [
-  { icon: Facebook, href: "https://www.facebook.com/ladwa.Inc/", label: "Facebook" },
-  { icon: Twitter, href: "https://x.com/Ladwa_solutions?t=XSd2oXxlWQJRNbpZZGxelg&s=09", label: "X" },
-  { icon: Youtube, href: "https://www.youtube.com/channel/UC5QKEkNyiib6_ATyO5aTCRQ", label: "Youtube" },
-  { icon: Instagram, href: "https://www.instagram.com/ladwa_solutions?igsh=ZmN0NGJuOWJ4bzR2", label: "Instagram" },
-  { icon: Linkedin, href: "https://www.linkedin.com/company/ladwa-solutions-inc/", label: "LinkedIn" },
+  { icon: Facebook, href: "/", label: "Facebook" },
+  { icon: Twitter, href: "/", label: "X" },
+  { icon: Youtube, href: "/", label: "Youtube" },
+  { icon: Instagram, href: "/", label: "Instagram" },
+  { icon: Linkedin, href: "/", label: "LinkedIn" },
 ];
 
 function LinkSection({ title, links }) {
@@ -164,18 +162,18 @@ export default function ModernFooter() {
             <h3 className="text-base lg:text-lg font-semibold">Contact</h3>
             <ul className="space-y-2 text-sm text-gray-700">
               <li>
-                <span className="block">NO. 3,4 AND 9, Khata No. 37/1,</span>
-                <span className="block">Singasandra Village, Begur Hobli,</span>
-                <span className="block">Bengaluru-560068</span>
+                <span className="block">NO. 3,4 AND 9,</span>
+                <span className="block">Kanpur</span>
+                <span className="block">Uttar Pradesh</span>
               </li>
               <li>
-                <a className="hover:text-gray-900" href="tel:+919945234161">
-                  +91-9945234161
+                <a className="hover:text-gray-900" href="tel:+9199999999">
+                  +91-99999999
                 </a>
               </li>
               <li>
-                <a className="hover:text-gray-900" href="mailto:sales@ladwas.com">
-                  sales@ladwas.com
+                <a className="hover:text-gray-900" href="mailto:sales@hospcare.com">
+                  sales@hospcare.com
                 </a>
               </li>
             </ul>
@@ -189,9 +187,9 @@ export default function ModernFooter() {
               © {new Date().getFullYear()} Hospcare — Smart Healthcare Access Platform
             </p>
             <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2">
-              <Link href="/terms-privacy" className="text-sm text-gray-700 hover:text-gray-900">Terms of Use</Link>
-              <Link href="/terms-privacy" className="text-sm text-gray-700 hover:text-gray-900">Privacy Policy</Link>
-              <Link href="/terms-privacy" className="text-sm text-gray-700 hover:text-gray-900">Legal</Link>
+              <Link href="/" className="text-sm text-gray-700 hover:text-gray-900">Terms of Use</Link>
+              <Link href="/" className="text-sm text-gray-700 hover:text-gray-900">Privacy Policy</Link>
+              <Link href="/" className="text-sm text-gray-700 hover:text-gray-900">Legal</Link>
               <Link href="/contact-us" className="text-sm text-gray-700 hover:text-gray-900">Site Map</Link>
             </nav>
           </div>

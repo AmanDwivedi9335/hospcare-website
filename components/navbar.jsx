@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import LoadingSpinner from "@/components/HomeNew/LoadingSpinner.jsx";
-import LadwaLogo from "@/public/images/Ladwa_Logo.png";
+import LadwaLogo from "@/public/images/hospcare_logo.png";
 import { Outfit } from "next/font/google";
 import { useRouter } from "next/navigation";
 
