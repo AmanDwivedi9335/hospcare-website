@@ -136,7 +136,7 @@ export default function Navbar() {
 						<Link href="/" className={`text-sm font-medium ${isActive("/")}`}>
 							Home
 						</Link>
-						<div className="pl-4 flex flex-col space-y-2">
+						{/* <div className="pl-4 flex flex-col space-y-2">
 							<Link href="/products" className="text-sm text-gray-600 hover:text-teal-700">All Products</Link>
 							{loading ? (
 								<div className="py-2">
@@ -149,7 +149,7 @@ export default function Navbar() {
 									</Link>
 								))
 							)}
-						</div>
+						</div> */}
 						{/* <Link
 							href="/solutions"
 							className={`text-sm font-medium ${isActive("/solutions")}`}
