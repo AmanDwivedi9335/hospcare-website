@@ -130,7 +130,7 @@ export default function ContactUsContent() {
                                                 animate={{ opacity: 1, scale: 1 }}
                                                 transition={{ duration: 0.6, delay: 0.2 }}
                                         >
-                                                Contact LADWA Safety Experts
+                                                Contact Hospcare Safety Experts
                                         </motion.h1>
                                         <motion.p
                                                 className="text-gray-600 md:text-base text-sm"
