@@ -137,6 +137,7 @@ export default function Navbar() {
 							Home
 						</Link>
 						<div className="pl-4 flex flex-col space-y-2">
+							<Link href="/products" className="text-sm text-gray-600 hover:text-teal-700">All Products</Link>
 							{loading ? (
 								<div className="py-2">
 									<LoadingSpinner />
