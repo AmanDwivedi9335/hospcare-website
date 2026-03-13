@@ -66,41 +66,41 @@ const fadeInUp = {
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-hidden bg-slate-950 text-slate-100">
+    <main className="min-h-screen overflow-hidden bg-gradient-to-b from-cyan-50 via-white to-sky-50 text-slate-800">
       <section className="relative isolate">
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,_#14b8a620,_transparent_45%),radial-gradient(circle_at_top_left,_#0ea5e920,_transparent_50%)]" />
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,_#22d3ee30,_transparent_45%),radial-gradient(circle_at_top_left,_#38bdf830,_transparent_50%)]" />
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 md:grid-cols-2 md:py-24">
           <motion.div {...fadeInUp}>
-            <p className="inline-flex items-center gap-2 rounded-full border border-teal-300/30 bg-teal-300/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-teal-200">
+            <p className="inline-flex items-center gap-2 rounded-full border border-cyan-300/70 bg-cyan-100 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-700">
               <Activity size={14} /> Hospcare
             </p>
             <h1 className="mt-5 text-4xl font-bold leading-tight md:text-6xl">
               India&apos;s Smart
-              <span className="bg-gradient-to-r from-teal-300 to-cyan-200 bg-clip-text text-transparent"> Healthcare Access </span>
+              <span className="bg-gradient-to-r from-cyan-600 to-sky-500 bg-clip-text text-transparent"> Healthcare Access </span>
               Platform
             </h1>
-            <p className="mt-6 max-w-xl text-base text-slate-300 md:text-lg">
+            <p className="mt-6 max-w-xl text-base text-slate-600 md:text-lg">
               Find the right doctors, book hospital appointments, and get complete surgery and treatment guidance — all in one place.
             </p>
-            <p className="mt-3 max-w-xl text-base text-slate-300 md:text-lg">
+            <p className="mt-3 max-w-xl text-base text-slate-600 md:text-lg">
               We connect patients with trusted hospitals and specialists while making quality healthcare more accessible and affordable.
             </p>
             <div className="mt-8 flex flex-wrap gap-3 text-sm font-semibold md:text-base">
               <Link
                 href="/contact-us"
-                className="rounded-full bg-teal-400 px-6 py-3 text-slate-900 transition hover:-translate-y-0.5 hover:bg-teal-300"
+                className="rounded-full bg-cyan-600 px-6 py-3 text-white shadow-lg shadow-cyan-200 transition hover:-translate-y-0.5 hover:bg-cyan-500"
               >
                 Book Appointment
               </Link>
               <Link
                 href="/contact-us"
-                className="rounded-full border border-slate-500 px-6 py-3 text-slate-100 transition hover:-translate-y-0.5 hover:border-cyan-200"
+                className="rounded-full border border-slate-300 bg-white px-6 py-3 text-slate-700 transition hover:-translate-y-0.5 hover:border-cyan-400 hover:text-cyan-700"
               >
                 Find Hospitals
               </Link>
               <Link
                 href="/contact-us"
-                className="rounded-full border border-slate-500 px-6 py-3 text-slate-100 transition hover:-translate-y-0.5 hover:border-cyan-200"
+                className="rounded-full border border-slate-300 bg-white px-6 py-3 text-slate-700 transition hover:-translate-y-0.5 hover:border-cyan-400 hover:text-cyan-700"
               >
                 Get Surgery Assistance
               </Link>
@@ -114,9 +114,9 @@ export default function Home() {
             transition={{ duration: 0.7, ease: "easeOut" }}
             className="relative"
           >
-            <div className="absolute -left-6 -top-6 h-24 w-24 rounded-full bg-teal-300/30 blur-2xl" />
-            <div className="absolute -bottom-6 -right-6 h-24 w-24 rounded-full bg-cyan-300/30 blur-2xl" />
-            <div className="relative rounded-3xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
+            <div className="absolute -left-6 -top-6 h-24 w-24 rounded-full bg-cyan-300/50 blur-2xl" />
+            <div className="absolute -bottom-6 -right-6 h-24 w-24 rounded-full bg-sky-300/50 blur-2xl" />
+            <div className="relative rounded-3xl border border-cyan-100 bg-white p-4 shadow-xl shadow-cyan-100/70 backdrop-blur-sm">
               <Image
                 src="/images/hospcare/hero-healthcare.svg"
                 alt="Hospcare healthcare platform illustration"
@@ -135,17 +135,17 @@ export default function Home() {
           <motion.article
             key={stat.label}
             whileHover={{ y: -6 }}
-            className="rounded-2xl border border-white/10 bg-white/5 p-5 text-center backdrop-blur-sm"
+            className="rounded-2xl border border-cyan-100 bg-white p-5 text-center shadow-md shadow-cyan-100/50"
           >
-            <h3 className="text-3xl font-bold text-teal-200">{stat.value}</h3>
-            <p className="mt-1 text-sm text-slate-300">{stat.label}</p>
+            <h3 className="text-3xl font-bold text-cyan-700">{stat.value}</h3>
+            <p className="mt-1 text-sm text-slate-500">{stat.label}</p>
           </motion.article>
         ))}
       </section>
 
       <motion.section {...fadeInUp} className="mx-auto max-w-7xl px-4 py-14">
         <h2 className="text-3xl font-bold md:text-4xl">Our Services</h2>
-        <p className="mt-2 max-w-3xl text-slate-300">Designed to support patients at every stage of their healthcare journey.</p>
+        <p className="mt-2 max-w-3xl text-slate-600">Designed to support patients at every stage of their healthcare journey.</p>
         <div className="mt-8 grid gap-5 md:grid-cols-2">
           {services.map((service) => {
             const Icon = service.icon;
@@ -153,13 +153,13 @@ export default function Home() {
               <motion.article
                 key={service.title}
                 whileHover={{ y: -6, scale: 1.01 }}
-                className="rounded-2xl border border-white/10 bg-slate-900/70 p-6 shadow-[0_10px_40px_-25px_rgba(56,189,248,0.7)]"
+                className="rounded-2xl border border-cyan-100 bg-white p-6 shadow-[0_10px_40px_-25px_rgba(14,165,233,0.65)]"
               >
-                <div className="mb-4 inline-flex rounded-xl bg-cyan-200/20 p-3 text-cyan-200">
+                <div className="mb-4 inline-flex rounded-xl bg-cyan-100 p-3 text-cyan-700">
                   <Icon size={24} />
                 </div>
                 <h3 className="text-xl font-semibold">{service.title}</h3>
-                <p className="mt-2 text-slate-300">{service.description}</p>
+                <p className="mt-2 text-slate-600">{service.description}</p>
               </motion.article>
             );
           })}
@@ -167,15 +167,15 @@ export default function Home() {
       </motion.section>
 
       <section className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-14 md:grid-cols-2">
-        <motion.article {...fadeInUp} className="rounded-2xl border border-white/10 bg-white/5 p-6">
+        <motion.article {...fadeInUp} className="rounded-2xl border border-cyan-100 bg-white p-6 shadow-md shadow-cyan-100/60">
           <h2 className="text-2xl font-bold md:text-3xl">Our Vision</h2>
-          <p className="mt-3 text-slate-300">
+          <p className="mt-3 text-slate-600">
             To become the most trusted global healthcare platform, connecting millions of patients with the best doctors and hospitals through innovative technology.
           </p>
         </motion.article>
-        <motion.article {...fadeInUp} className="rounded-2xl border border-white/10 bg-white/5 p-6">
+        <motion.article {...fadeInUp} className="rounded-2xl border border-cyan-100 bg-white p-6 shadow-md shadow-cyan-100/60">
           <h2 className="text-2xl font-bold md:text-3xl">Our Mission</h2>
-          <p className="mt-3 text-slate-300">
+          <p className="mt-3 text-slate-600">
             To simplify healthcare access by helping patients discover doctors, hospitals, treatments, and support services in one seamless platform.
           </p>
         </motion.article>
@@ -184,10 +184,10 @@ export default function Home() {
       <section className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-14 md:grid-cols-2">
         <motion.div {...fadeInUp}>
           <h2 className="text-3xl font-bold md:text-4xl">For Hospitals & Doctors</h2>
-          <p className="mt-3 text-slate-300">
+          <p className="mt-3 text-slate-600">
             Hospcare partners with healthcare providers to improve discoverability, streamline appointments, and deliver better care outcomes.
           </p>
-          <ul className="mt-5 space-y-3 text-slate-200">
+          <ul className="mt-5 space-y-3 text-slate-600">
             {[
               "Increased patient reach",
               "Digital appointment management",
@@ -195,12 +195,12 @@ export default function Home() {
               "Technology-enabled healthcare services",
             ].map((item) => (
               <li key={item} className="flex items-center gap-2">
-                <Stethoscope size={16} className="text-teal-300" /> {item}
+                <Stethoscope size={16} className="text-cyan-600" /> {item}
               </li>
             ))}
           </ul>
         </motion.div>
-        <motion.div {...fadeInUp} className="rounded-3xl border border-white/10 bg-white/5 p-4">
+        <motion.div {...fadeInUp} className="rounded-3xl border border-cyan-100 bg-white p-4 shadow-xl shadow-cyan-100/70">
           <Image
             src="/images/hospcare/hospital-network.svg"
             alt="Hospital and doctor network illustration"
@@ -222,9 +222,9 @@ export default function Home() {
               <motion.li
                 key={item.point}
                 whileHover={{ y: -5 }}
-                className="rounded-2xl border border-white/10 bg-white/5 p-5 text-slate-100"
+                className="rounded-2xl border border-cyan-100 bg-white p-5 text-slate-700 shadow-md shadow-cyan-100/50"
               >
-                <Icon className="mb-3 text-cyan-200" size={20} />
+                <Icon className="mb-3 text-cyan-600" size={20} />
                 {item.point}
               </motion.li>
             );
@@ -233,7 +233,7 @@ export default function Home() {
       </section>
 
       <section className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-14 md:grid-cols-2">
-        <motion.div {...fadeInUp} className="rounded-3xl border border-white/10 bg-white/5 p-4">
+        <motion.div {...fadeInUp} className="rounded-3xl border border-cyan-100 bg-white p-4 shadow-xl shadow-cyan-100/70">
           <Image
             src="/images/hospcare/healthcare-goal.svg"
             alt="Future healthcare goals illustration"
@@ -244,10 +244,10 @@ export default function Home() {
         </motion.div>
         <motion.div {...fadeInUp}>
           <h2 className="text-3xl font-bold md:text-4xl">Our Goal</h2>
-          <p className="mt-3 text-slate-300">
+          <p className="mt-3 text-slate-600">
             We are building a strong healthcare ecosystem that benefits both patients and providers while improving quality care access at scale.
           </p>
-          <p className="mt-3 text-slate-300">
+          <p className="mt-3 text-slate-600">
             Hospcare is focused on becoming a leading healthcare technology platform that transforms how people experience healthcare.
           </p>
         </motion.div>
